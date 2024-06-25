@@ -16,7 +16,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Build artifact
-        run: make my-app
+        run: cargo build --verbose
       - name: Attest Build Provenance
         uses: actions/attest-build-provenance@v1.3.2
         with:
